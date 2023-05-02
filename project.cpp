@@ -5,26 +5,38 @@ class equation
 {
     float a,b,c,D,x1,x2,real,imaginary;
 public:
+//member function to get quadratic equation
     void putdata()
     {
-        cout<<"The Quadratic Equation is in the format of ax2 + bx + c = 0"<<endl;
+        cout<<endl<<"The Quadratic Equation is in the format of ax^2 + bx + c = 0"<<endl;
         cout<<"Enter the number a:";
         cin>>a;
         cout<<"Enter the number b:";
         cin>>b;
         cout<<"Enter the number c:";
         cin>>c;
-        cout<<"Your Quadratic Equation is "<<a<<"x^2 + "<<b<<"x + "<<c<<" = 0"<<endl;
+        cout<<endl<<"Your Quadratic Equation is "<<a<<"x^2 + "<<b<<"x + "<<c<<" = 0"<<endl;
 
     }
+
+//member function to solve quadratic equation
     void discriminant()
     {
         D=((b*b)-4*a*c);
-        if(a==0)
+        if(a==0 && b==0 && c==0)
+        {
+            cout<<"This is not a equation "<<endl;
+        }
+        else if(a==0 && b==0 && c!=0)
+        {
+            cout<<"Invalid "<<endl;
+        }
+
+        else if(a==0)
         {
             cout<<"The given equation is linear equation."<<endl;
         }
-        if(a!=0)
+        else if(a!=0)
         {
             cout<<"The roots of the given equation is:"<<endl;
             if(D>0)
