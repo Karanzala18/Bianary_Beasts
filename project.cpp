@@ -32,7 +32,7 @@ public:
             cout<<"Invalid "<<endl;
         }
 
-        else if(a==0)
+        else if(a==0)  //if a=0 then quadratic equation is linear equation
         {
             cout<<"The given equation is linear equation."<<endl;
         }
