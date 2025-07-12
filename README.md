@@ -1,2 +1,2 @@
-# Bianary_Beasts
+# Bianary Beasts
 Quadratic equation solver
