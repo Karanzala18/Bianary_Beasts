@@ -55,7 +55,7 @@ public:
                 cout<<"x1 = "<<real<< " + " <<"("<<imaginary<<")"<< "i" <<endl;
                 cout<<"x2 = "<<real<< " - " <<"("<<imaginary<<")"<< "i" <<endl;
             }
-            else if(D==0)
+            else if(D == 0)
             {
                 x1 = -b/(2*a);
                 cout<<"Roots are real and same"<<endl;
@@ -76,6 +76,6 @@ int main()
     e.discriminant();
     cout <<"Do you want to find more roots(y/n):";
     cin>>d;
-    }while(d=='y' or d=='Y');
+    }while( d=='y' or d=='Y' );
     return 0;
 }
